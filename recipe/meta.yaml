@@ -13,7 +13,7 @@ source:
     - 0002-Fix-for-Windows-build.patch
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
   detect_binary_files_with_prefix: true
   run_exports:
@@ -50,7 +50,6 @@ requirements:
     # See https://conda-forge.org/docs/maintainer/knowledge_base.html#libgl
     - xorg-libxfixes  # [linux]
   run:
-    - python
     - expat
     - pango
     - cairo
